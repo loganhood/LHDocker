@@ -7,10 +7,12 @@ We first need to install Docker Compose so we can make a YAML file to define the
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2 docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
+
 2. Apply executable permissions:
 ```
  sudo chmod +x /usr/local/bin/docker-compose
 ```
+
 3. Test that the installation was successful:
 ```
 docker-compose -v
@@ -22,17 +24,19 @@ docker-compose -v
 mkdir logan_wordpress
 cd logan_wordpress
 ```
+
 2. Create a `docker-compose.yml` file that starts the WordPress site and MySQL instance:
 ```
 touch docker-compose.yml
 ```
+
 3. Edit the file with the following:
 ```
 version: "3.9"
     
 services:
   db:
-    image: mysql:5.7
+  image: mysql:5.7
     volumes:
       - db_data:/var/lib/mysql
     restart: always
@@ -60,6 +64,7 @@ volumes:
   db_data: {}
   wordpress_data: {}
 ```
+
 4. Build the website:
 ```
 sudo docker-compose up -d
