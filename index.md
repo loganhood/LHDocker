@@ -15,6 +15,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2 docker-
 ```
 docker-compose -v
 ```
+
 ## Wordpress installation
 1. Make a directory for your site and change into it:
 ```
@@ -65,3 +66,13 @@ sudo docker-compose up -d
 ```
 5. Access http://localhost:8000 in a web browser.
 6. Complete the installation steps on the page.
+
+Your website should now be set up. You can edit the page with WordPress Admin interface.
+
+
+![This is the WordPress Admin interface.](img/admin_page.png "WordPress Admin interface")
+
+
+## Resources
+- https://docs.docker.com/compose/install/
+- https://docs.docker.com/samples/wordpress/
