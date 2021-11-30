@@ -32,8 +32,8 @@ touch docker-compose.yml
 
 3. Edit the file with the following:  
 ```
-version: \"3.9\"
-    
+version: "3.9"
+
 services:
   db:
   image: mysql:5.7
