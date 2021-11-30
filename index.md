@@ -31,7 +31,7 @@ touch docker-compose.yml
 ```
 
 3. Edit the file with the following:  
-```
+~~~
 version: "3.9"
 
 services:
@@ -63,7 +63,7 @@ services:
 volumes:
   db_data: {}
   wordpress_data: {}
-```
+~~~
 
 4. Build the website:
 ```
