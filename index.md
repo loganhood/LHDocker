@@ -30,7 +30,7 @@ cd logan_wordpress
 touch docker-compose.yml
 ```
 
-3. Edit the file with the following:
+3. Edit the file with the following:  
 ```
 version: "3.9"
     
