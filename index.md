@@ -30,7 +30,9 @@ cd logan_wordpress
 touch docker-compose.yml
 ```
 
-3. Edit the file with the following:  
+3. Edit the file with the following:
+
+
 ~~~
 version: "3.9"
 
@@ -64,6 +66,7 @@ volumes:
   db_data: {}
   wordpress_data: {}
 ~~~
+
 
 4. Build the website:
 ```
